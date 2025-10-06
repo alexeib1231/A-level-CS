@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-xdads
+
 ﻿List<string>  Wave(string str)
 {
     List<string> waved = new List<string>();
