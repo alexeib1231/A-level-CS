@@ -1,7 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-xdads
-﻿List<string>  Wave(string str)
+﻿using System.Diagnostics;
+List<string>  Wave(string str)
 {
     List<string> waved = new List<string>();
     for (int i = 0; i < str.Length; i++)
@@ -12,4 +10,4 @@ xdads
     }
     return waved;
 }
-Console.WriteLine(Wave("hello"));
+Debug.Assert(Wave("hello").SequenceEqual(new List<string> { "Hello", "hEllo", "heLlo", "helLo", "hellO" }));
